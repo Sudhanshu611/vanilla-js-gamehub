@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="game-wrapper">
+        <h2>Rock Paper Scissor</h2>
+        <div class="image-container">
+            <div class="player-hand"><img src="../images/rock-paper-scissor/paper.png" alt=""></div>
+            <div class="vs">Vs</div>
+            <div class="comp-hand"><img src="../images/rock-paper-scissor/rock.png" alt=""></div>
+        </div>
+        <div class="button-set">
+            <button class="game-btn" data-game-sel = 'rock'>Rock</button>
+            <button class="game-btn" data-game-sel = 'paper'>Paper</button>
+            <button class="game-btn" data-game-sel = 'scissor'>Scissor</button>
+        </div>
+        <div class="score-board">
+            <div class="rounds-data score-board-bg"></div>
+            <div class="top-score-data score-board-bg"></div>
+            <div class="score-data score-board-bg"></div>
+        </div>
+    </div>
+    <!-- <div class="game-over">
+        <div class="game-msg">
+            <div class="text">🎮 No rounds left!</div>
+            <div class="score-gained">
+                <div class="top-score-data-game-over score-board-bg">Top Score : 30</div>
+                <div class="score-data-game-over score-board-bg">Score : 30</div>
+            </div>
+            <div class="restart-btn"><button>Restart</button></div>
+        </div>
+    </div> -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

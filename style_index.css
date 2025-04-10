@@ -1,0 +1,141 @@
+/* <Color Usage .nav-listst>
+#4A4C9C - Primary Blue (Main body background)
+#2A2E63 - Dark Blue (Navbar, button backgrounds, shadows)
+#D8D5F7 - Light Purple/Gray (Outlines, joystick rings, borders)
+#4BE8C0 - Bright Teal Green (Primary buttons, icons, arrows)
+#F46BA3 - Hot Pink (Secondary buttons, icons, arrows)
+#C13B77 - Shadow Pink (Button shadow for hot pink)
+#27A48F - Shadow Teal (Button shadow for teal)
+#F39A5B - Orange (Top/CTA button)
+#D86734 - Shadow Orange (Top button shadow)
+#1E2651 - Deep Navy (Text on light bg, joystick inner circle, strong contrast)
+#FFFFFF - White (Text color on dark backgrounds)
+> Pro Tip: Use hover effects with darker variants or swap between teal/pink for dynamic UX
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+
+:root{
+    --nav-bg: #2a2e63;
+    --main-bg: #4A4C9C;   
+    --card: rgba(216,213,247, 0.2);
+    --text: white;
+    --font: Raleway;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--card);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--nav-bg);
+    border-radius: 6px;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    font-family: var(--font);
+}
+
+
+nav{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--nav-bg);
+    width: 17%;
+    min-height: 100vh;
+}
+nav img{
+    width: 68px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .nav-list-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 17px;
+    left: 9px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: var(--card);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.logo img{
+    margin-left: 10px;
+}
+nav .nav-list-container .nav-list{
+    margin-top: 50px;
+    border-radius: 8px;
+    width: 80%;
+    padding: 13px;
+    transition: 150ms ease-in-out;
+
+}
+nav .nav-list-container .nav-list:hover{
+    background-color: var(--card);
+}
+
+/* Game Card Container */
+
+.game-card-container{
+    width: 80%;
+    margin-left: 265px;
+    display: grid;
+    /* padding: 20px; */
+    gap: 40px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.game-card-container .game-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px 20px;
+    border-radius: 10px;
+    background-color: var(--card);
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+
+}
+.game-card-container .game-card:hover{
+    transform: scale(1.1);
+}
+.game-card-container .game-card .game-name{
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.game-card-container .game-card .game-description{
+    padding: 12px 25px;
+    color:var(--text);
+    margin-top: 10px ;
+    border-radius: 10px;
+    background-color: rgba(42, 46, 99, 0.5) ;
+}
+.game-card-container .game-card img{
+    width: 220px;
+    border-radius: 10px;
+}
