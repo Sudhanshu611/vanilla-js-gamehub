@@ -122,6 +122,9 @@ nav .nav-list-container .nav-list:hover{
 .game-card-container .game-card:hover{
     transform: scale(1.1);
 }
+.game-card-container .game-card a{
+    text-decoration: none;
+}
 .game-card-container .game-card .game-name{
     margin-top: 20px;
     color: white;
