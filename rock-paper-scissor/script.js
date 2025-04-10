@@ -68,10 +68,12 @@ document.querySelectorAll('.game-btn').forEach((btn) => {
         const compHand = compHandSel();
 
         if (scoreCard.rounds > 0){
+            btn.disabled = false;
             renderGame(playerHand, compHand);
             
         }
         if ((scoreCard.rounds === 0)){
+            btn.disabled = true;
             topScore();
             saveToLocalStorage();
             setTimeout(() => {
