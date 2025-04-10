@@ -59,7 +59,7 @@ function alertGameOver(){
             </div>
         </div>`;
     document.querySelector('.js-restart-btn').addEventListener('click', ()=>{
-        location.reload();
+        window.location.href = window.location.href;
     })
 }
 document.querySelectorAll('.game-btn').forEach((btn) => {
